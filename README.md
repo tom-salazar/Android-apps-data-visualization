@@ -43,6 +43,9 @@ Microsoft Excel, PostgreSQL Database, Power BI
 ## Key Insights
  - Highest total of app installed from Game category with 1billion downloads.
  - Total apps: 8,226, Total genres: 33.
+ - App users: Teen, Everyone 10, Everyone, Mature 17, Adults only 18.
+ - App type: Free/Paid.
+ - Installed apps by category.
 
 ### Credits:
 The Dataset is downloaded from Kaggle website. L. Gupta, "Google Play Store Apps," Feb 2019. Available: https://www.kaggle.com/lava18/google-play-store-apps
