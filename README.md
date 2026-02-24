@@ -1,28 +1,21 @@
 # Android-apps-data-visualization
-Google play store apps data.
+Google play store 2019 apps data.
 
 ## Overview
 Android apps dataset calculating total of installed apps, reviews and content rating by teen and everyone.
 
 ## Dataset Features
-The dataset includes 8,226 rows with the following key columns: to be updated
- - order_id – Unique ID for each sale 🆔
- - order_date – Sale date 📅
- - brand – Brand of the shoe 👟
- - model_name – Specific model of the shoe 🏷️
- - category – Running, Training, Basketball, Lifestyle, Gym 🏃‍♂️
- - gender – Men, Women, Unisex 🚹🚺
- - size – Shoe size 👞
- - color – Color of the shoe 🎨
- - base_price_usd – Original price 💵
- - discount_percent – Discount applied (%) 🔖
- - final_price_usd – Price after discount 💰
- - units_sold – Quantity sold 📦
- - revenue_usd – Total revenue for the order 📊
- - payment_method – Card, Cash, Wallet, Bank Transfer 💳
- - sales_channel – Online / Retail Store 🌐🏬
- - country – Country of sale 🌎
- - customer_rating – Average rating from 3.0 to 5.0 ⭐
+The dataset includes 8,226 rows with the following key columns:
+ - app_id – Unique ID for each app
+ - app_name – The application name
+ - category - The category the app belongs to
+ - rating - Overall user rating of the app
+ - reviews - Number of user reviews the app
+ - file_size - Size of the app
+ - installs - Number of user installs for the app
+ - app_type – Either Free/Paid
+ - price - Price of the app
+ - content_rating - The age group the app is targeted at: (Teen, Everyone, Mature 17, Everyone 10, Adults only 18)
 
 ## Tools
 Microsoft Excel, PostgreSQL Database, Power BI
