@@ -26,4 +26,4 @@ group by category;-- App that has highest installs by category
 select max(installs) as highest_install from PlaystoreApps; -- highest installs 
 
 select app_name, price from PlaystoreApps where price > 0; -- total paid apps - 662
-select app_name, price from PlaystoreApps where price = 0; -- total free apps - 7564
+select app_name, price from PlaystoreApps where price = 0; -- total free apps - 7566
