@@ -18,7 +18,7 @@ The dataset includes 8,226 rows with the following key columns:
  - content_rating - The age group the app is targeted at: (Teen, Everyone, Mature 17, Everyone 10, Adults only 18)
 
 ## Tools
-Microsoft Excel, PostgreSQL Database, Power BI
+Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 
 ## Power BI Dashboard
 
