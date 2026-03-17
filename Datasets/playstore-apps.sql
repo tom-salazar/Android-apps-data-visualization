@@ -26,7 +26,7 @@ WITH TotalInstallByCategory AS
 		SUM(Installs) AS total_download
 	FROM playstore_apps_copy 
 	GROUP BY Category
-	ORDER BY total_download DESC
+	
 ), -- Total Downloads by Category
 
 HighestInstallByCategory AS
@@ -46,7 +46,7 @@ AppReviewsByCategory AS
 		SUM(Reviews) AS total_reviews
 	FROM playstore_apps_copy
 	GROUP BY Category
-	ORDER BY total_reviews DESC
+	
 ), -- App reviews by Category
 
 MostDownloaddApp AS
@@ -66,7 +66,7 @@ NumberOfAppsByCategory AS
 		COUNT(*) AS number_of_apps
 	FROM playstore_apps_copy
 	GROUP BY Category
-	ORDER BY number_of_apps DESC
+	
 ), -- Number of apps by category
 
 TotalPaidApps AS
