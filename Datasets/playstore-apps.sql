@@ -21,16 +21,13 @@
 
 WITH TotalInstallByCategory AS
 (
-	SELECT
-	*
-	FROM
-		(SELECT 
-			Category, 
-			SUM(Installs) AS total_download
-		FROM playstore_apps_copy 
-		GROUP BY Category)tc
-		ORDER BY total_download DESC
-), -- Total Download by Category
+	SELECT 
+		Category, 
+		SUM(Installs) AS total_download
+	FROM playstore_apps_copy 
+	GROUP BY Category
+	ORDER BY total_download DESC
+), -- Total Downloads by Category
 
 HighestInstallByCategory AS
 (	
@@ -43,16 +40,15 @@ HighestInstallByCategory AS
 
 AppReviewsByCategory AS
 (
+	
 	SELECT
-	*
-	FROM
-		(SELECT
-			Category,
-			SUM(Reviews) AS total_reviews
-		FROM playstore_apps_copy
-		GROUP BY Category)tr
-		ORDER BY total_reviews DESC
+		Category,
+		SUM(Reviews) AS total_reviews
+	FROM playstore_apps_copy
+	GROUP BY Category
+	ORDER BY total_reviews DESC
 ), -- App reviews by Category
+
 MostDownloaddApp AS
 (
 	SELECT
@@ -66,40 +62,31 @@ MostDownloaddApp AS
 NumberOfAppsByCategory AS
 (
 	SELECT
-	*
-	FROM
-		(SELECT
-			Category,
-			COUNT(*) AS number_of_apps
-		FROM playstore_apps_copy
-		GROUP BY Category)na
-		ORDER BY number_of_apps DESC
+		Category,
+		COUNT(*) AS number_of_apps
+	FROM playstore_apps_copy
+	GROUP BY Category
+	ORDER BY number_of_apps DESC
 ), -- Number of apps by category
 
 TotalPaidApps AS
 (
 	SELECT 
-	*
-	FROM
-		(SELECT 
-			Type,
-			Count(Price) AS number_of_paid_apps
-		FROM playstore_apps_copy
-		WHERE Price > 0
-		GROUP BY Type)pa
+		Type,
+		Count(Price) AS number_of_paid_apps
+	FROM playstore_apps_copy
+	WHERE Price > 0
+	GROUP BY Type
 ), -- Number of paid apps: 527
 
 TotalFreeApps AS
 (
 	SELECT 
-	*
-	FROM
-		(SELECT 
-			Type,
-			Count(Price) AS number_of_free_apps
-		FROM playstore_apps_copy
-		WHERE Price = 0
-		GROUP BY Type)fa
+		Type,
+		Count(Price) AS number_of_free_apps
+	FROM playstore_apps_copy
+	WHERE Price = 0
+	GROUP BY Type
 ), -- Number of free apps: 6375
 
 AppType AS
@@ -125,6 +112,7 @@ AppCategories AS
 	FROM playstore_apps_copy
 	GROUP BY Category
 ) -- Apps Categories
+
 
 SELECT * FROM playstore_apps_copy ORDER BY Last_Updated;
 
