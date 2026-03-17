@@ -26,19 +26,22 @@ Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 
 **1. Dashboard Design**
 
-<img width="912" height="519" alt="playstore-dashboard" src="https://github.com/user-attachments/assets/dd8d50f5-7fdb-49e1-b9cd-5e11079a1d32" />
+<img width="1087" height="619" alt="playstore-dashboard" src="https://github.com/user-attachments/assets/170c3d89-4695-4fd0-ae6c-125b2cf929d4" />
+
 
 
 
 **2. Apps Installed, Total Apps and number of apps intalled by category**
 
-<img width="916" height="179" alt="card-visuals" src="https://github.com/user-attachments/assets/4434da2c-017c-4e2b-a441-252fdb5decf9" />
+<img width="1083" height="118" alt="card-visuals" src="https://github.com/user-attachments/assets/73c6a999-3e77-4568-95b7-d9d3f3a49830" />
+
 
 
 
 **3. Ratings and Reviews**
 
-<img width="456" height="339" alt="ratings-reviews" src="https://github.com/user-attachments/assets/5d0bdee6-22e4-46bf-b2b2-bc3ec87c4bf6" />
+<img width="541" height="407" alt="ratings-reviews" src="https://github.com/user-attachments/assets/08e61f4f-89e4-4121-9d77-24141ffa4a3d" />
+
 
 
 
