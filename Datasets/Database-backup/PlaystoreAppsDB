@@ -1,1 +1,32 @@
+USE [PlaystoreAppsDB]
+GO
+
+/****** Object:  Table [dbo].[playstore_apps_copy]    Script Date: 17/03/2026 4:31:18 pm ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[playstore_apps_copy](
+	[AppID] [int] NOT NULL,
+	[AppName] [varchar](220) NULL,
+	[Category] [varchar](60) NULL,
+	[Rating] [decimal](3, 1) NULL,
+	[Reviews] [int] NULL,
+	[Size] [varchar](10) NULL,
+	[Installs] [bigint] NULL,
+	[Type] [varchar](20) NULL,
+	[Price] [decimal](5, 2) NULL,
+	[Content_Rating] [varchar](50) NULL,
+	[Genres] [varchar](50) NULL,
+	[Last_Updated] [date] NULL,
+ CONSTRAINT [PK_playstore_apps_copy] PRIMARY KEY CLUSTERED 
+(
+	[AppID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
 
