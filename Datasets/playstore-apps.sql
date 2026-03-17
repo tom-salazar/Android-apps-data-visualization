@@ -30,7 +30,7 @@ WITH TotalInstallByCategory AS
 		FROM playstore_apps_copy 
 		GROUP BY Category)tc
 		ORDER BY total_download DESC
-),
+), -- Total Download by Category
 
 HighestInstallByCategory AS
 (	
@@ -39,7 +39,7 @@ HighestInstallByCategory AS
 		Installs
 	FROM playstore_apps_copy 
 	WHERE Installs = (SELECT MAX(Installs) AS ins FROM playstore_apps_copy)
-), -- Most Apps Installed by Category
+), -- Most Apps Installed by Category: Game, News and Magazines
 
 AppReviewsByCategory AS
 (
