@@ -69,25 +69,15 @@ NumberOfAppsByCategory AS
 	
 ), -- Number of apps by category
 
-TotalPaidApps AS
-(
-	SELECT 
+TotalPaidFreeApps AS (
+	SELECT
 		Type,
-		Count(Price) AS number_of_paid_apps
+		Count(*) AS number_of_apps,
+		SUM(CASE WHEN Price = 0 THEN 1 ELSE 0 END) AS free_apps,
+		SUM(CASE WHEN Price > 0 THEN 1 ELSE 0 END) AS paid_apps
 	FROM playstore_apps_copy
-	WHERE Price > 0
 	GROUP BY Type
-), -- Number of paid apps: 527
-
-TotalFreeApps AS
-(
-	SELECT 
-		Type,
-		Count(Price) AS number_of_free_apps
-	FROM playstore_apps_copy
-	WHERE Price = 0
-	GROUP BY Type
-), -- Number of free apps: 6375
+), -- Total of free apps: 6375 and paid apps: 527
 
 AppType AS
 (
