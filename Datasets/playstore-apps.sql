@@ -74,7 +74,7 @@ TotalPaidFreeApps AS (
 		SUM(CASE WHEN Price > 0 THEN 1 ELSE 0 END) AS paid_apps
 	FROM playstore_apps_copy
 	GROUP BY Type
-), -- Total of free apps: 6375 and paid apps: 527
+), -- Total of free apps and paid apps
 
 AppType AS
 (
