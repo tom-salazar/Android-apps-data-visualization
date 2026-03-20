@@ -5,7 +5,7 @@ Google play store 2011 to 2018 apps data.
 Android apps dataset calculating total of installed apps, reviews and content rating by teen and everyone.
 
 ## Dataset Features
-The dataset includes 6,902 rows with the following key columns:
+The dataset includes 6,882 rows with the following key columns:
  - AppId – Unique ID for each app
  - AppName – The application name
  - Category - The category the app belongs to
@@ -20,21 +20,19 @@ The dataset includes 6,902 rows with the following key columns:
  - Last_Updated - Apps data version updated
 
 ## Tools
-Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
+Microsoft SQL Server Management Studio, Power BI
 
 ## Power BI Dashboard
 
 **1. Dashboard Design**
 
-<img width="1087" height="619" alt="playstore-dashboard" src="https://github.com/user-attachments/assets/170c3d89-4695-4fd0-ae6c-125b2cf929d4" />
-
+<img width="1040" height="593" alt="playstore-dashboard" src="https://github.com/user-attachments/assets/b4f00e54-4c95-4f31-a212-8c0def4bd6bb" />
 
 
 
 **2. Apps Installed, Total Apps and number of apps intalled by category**
 
-<img width="1083" height="118" alt="card-visuals" src="https://github.com/user-attachments/assets/73c6a999-3e77-4568-95b7-d9d3f3a49830" />
-
+<img width="1024" height="106" alt="card-visuals" src="https://github.com/user-attachments/assets/55ff2ba1-d130-4ff6-908f-a25441e59d92" />
 
 
 
@@ -47,7 +45,7 @@ Microsoft Excel, Microsoft SQL Server Management Studio, Power BI
 
 ## Key Insights
  - Highest total of app installed from Game, News and Magazines category with 1billion downloads.
- - Total apps: 6,902 Total genres/categories: 33.
+ - Total apps: 6,882 Total genres/categories: 33.
  - App users: Teen, Everyone 10, Everyone, Mature 17, Adults only 18.
  - App type: Free/Paid.
  - Installed apps by category.
