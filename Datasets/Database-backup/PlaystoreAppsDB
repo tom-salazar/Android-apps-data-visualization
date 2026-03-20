@@ -1,7 +1,7 @@
 USE [PlaystoreAppsDB]
 GO
 
-/****** Object:  Table [dbo].[playstore_apps_copy]    Script Date: 17/03/2026 4:31:18 pm ******/
+/****** Object:  Table [dbo].[playstore_apps_copy]    Script Date: 20/03/2026 12:26:04 pm ******/
 SET ANSI_NULLS ON
 GO
 
@@ -27,6 +27,5 @@ CREATE TABLE [dbo].[playstore_apps_copy](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
 
 
